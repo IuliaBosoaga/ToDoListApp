@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">ToDoList</string>
+        <string name="task_description">Ce vrei sa faci?</string>
+        <string name="task_priority">Task cu prioritate</string>
+        <string name="task_date">Termen limita</string>
+        <string name="demo_task">Make a working demo</string>
+        <string name="date_empty">Nesetat</string>
+        <string name="action_reminder">Seteaza Reminder</string>
+        <string name="action_delete">Sterge Task</string>
+        <string name="ct_dsc_priority">Priority image</string>
+        <string name="settings">Setari</string>
+        <string name="pref_sortOrder_title">Filtrare</string>
+        <string name="pref_sortBy_title">Sorteaza dupa:</string>
+        <string name="pref_summary">Alege o ordine sa-ti indeplinesti Task-urile.</string>
+        <string name="pref_sortBy_default_label">Implicit</string>
+        <string name="pref_sortBy_due_label">Termen limita</string>
+        <string name="reminder_title">Task Reminder</string>
+        <string name="task_completed_failed">Task neterminat</string>
+        <string name="task_completed">Task terminat</string>
+        <string name="deleting_task_failed">Stergerea Task-ului nu a reusit</string>
+        <string name="deleting_task_successful">Task sters cu succes</string>
+
+        <string name="pref_sortBy_key" translatable="false">Sorteaza</string>
+        <string name="pref_sortBy_default" translatable="false">implicit</string>
+        <string name="pref_sortBy_due" translatable="false">due</string>
+        <string name="action_save">Salveaza</string>
+
+</resources>

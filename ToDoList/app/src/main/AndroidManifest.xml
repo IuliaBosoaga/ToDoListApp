@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.todoapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ToDoList"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.project.todoapp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.project.todoapp.data.TaskProvider"
+            android:authorities="com.project.todoapp"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.project.todoapp.NewTaskActivity"
+            android:exported="false"
+            android:parentActivityName="com.project.todoapp.MainActivity"/>
+
+        <activity
+            android:name="com.project.todoapp.SettingsActivity"
+            android:exported="false"
+            android:parentActivityName="com.project.todoapp.MainActivity"/>
+
+        <activity
+            android:name="com.project.todoapp.TaskDetailActivity"
+            android:exported="false"
+            android:parentActivityName="com.project.todoapp.MainActivity"/>
+
+        <service
+            android:name="com.project.todoapp.data.TaskUpdateService"
+            android:exported="false" />
+
+        <service
+            android:name="com.project.todoapp.reminders.ReminderAlarmService"
+            android:exported="false" />
+
+
+    </application>
+
+</manifest>
